@@ -1,0 +1,55 @@
+.first_part {
+  @apply container py-16;
+}
+.first_part h6 {
+  @apply text-[32px] font-bold mb-6;
+}
+.first_part p {
+  @apply text-[16px] max-w-[800px];
+}
+.card-section {
+  @apply container grid grid-cols-3 gap-8 mb-16;
+}
+.card {
+  @apply flex flex-col gap-4;
+}
+.card h6 {
+  @apply text-[20px] font-bold;
+}
+.card p {
+  @apply font-poppins font-medium text-[16px] leading-7 pb-6;
+}
+.pic_div {
+  @apply w-full mb-4;
+}
+.pic {
+  @apply w-full h-full object-cover transform transition-transform duration-300 hover:scale-110;
+}
+
+@media (max-width: 768px) {
+  .card-section {
+    @apply grid-cols-2 px-4;
+  }
+
+  .first_part {
+    @apply px-4;
+  }
+
+  .first_part h6 {
+    @apply text-[24px];
+  }
+}
+
+@media (max-width: 640px) {
+  .card-section {
+    @apply grid-cols-1;
+  }
+
+  .first_part h6 {
+    @apply text-[20px];
+  }
+
+  .card h6 {
+    @apply text-[18px];
+  }
+}

@@ -1,0 +1,59 @@
+.main_sec {
+  @apply container py-16;
+}
+
+.main_div {
+  @apply flex justify-between items-center mb-16;
+}
+
+.main_div h2 {
+  @apply text-[32px] font-bold mb-4;
+}
+
+.main_div p {
+  @apply max-w-[600px];
+}
+
+.second_main {
+  @apply w-full;
+}
+
+.second_main h3 {
+  @apply text-[24px] font-bold mb-8;
+}
+
+.second_main > div {
+  @apply grid grid-cols-3 gap-8;
+}
+
+@media (max-width: 768px) {
+  .main_sec {
+    @apply px-4;
+  }
+
+  .main_div {
+    @apply flex-col text-center gap-6;
+  }
+
+  .second_main > div {
+    @apply grid-cols-2;
+  }
+
+  .main_div h2 {
+    @apply text-[24px];
+  }
+}
+
+@media (max-width: 640px) {
+  .second_main > div {
+    @apply grid-cols-1;
+  }
+
+  .main_div h2 {
+    @apply text-[20px];
+  }
+
+  .second_main h3 {
+    @apply text-[20px];
+  }
+}

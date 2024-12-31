@@ -1,0 +1,43 @@
+.main_div2 {
+  @apply container flex justify-between items-center py-16;
+}
+.first_p {
+  @apply text-[#929A9F] text-[14px] tracking-[1.4px] uppercase mb-4;
+}
+.head {
+  @apply text-[32px] font-bold mb-4;
+}
+.second_p {
+  @apply max-w-[494px] mb-8;
+}
+.image {
+  @apply max-w-[600px];
+}
+.image .pic {
+  @apply w-full h-auto;
+}
+@media (max-width: 768px) {
+  .main_div2 {
+    @apply flex-col-reverse px-4 gap-8;
+  }
+  .head {
+    @apply text-[24px];
+  }
+  .second_p {
+    @apply max-w-full;
+  }
+  .image {
+    @apply max-w-full;
+  }
+}
+@media (max-width: 320px) {
+  .head {
+    @apply text-[20px];
+  }
+  .second_p {
+    @apply text-[14px];
+  }
+  .first_p {
+    @apply text-[12px];
+  }
+}

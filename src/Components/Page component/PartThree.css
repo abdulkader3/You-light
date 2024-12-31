@@ -1,0 +1,41 @@
+.backgroundPhoto {
+  background-image: url('/public/images/Section.png');
+  /* background-size: cover; */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+
+}
+
+@media (max-width: 768px) {
+  .backgroundPhoto > div {
+    @apply pt-12 px-6 pl-8;
+  }
+
+  .backgroundPhoto p {
+    @apply w-full max-w-[100%];
+  }
+
+  .backgroundPhoto h1 {
+    @apply text-[12px];
+  }
+
+  .backgroundPhoto p:nth-child(2) {
+    @apply text-[24px];
+  }
+}
+
+@media (max-width: 320px) {
+  .backgroundPhoto > div {
+    @apply pt-8 px-4;
+  }
+
+  .backgroundPhoto p:nth-child(2) {
+    @apply text-[20px];
+  }
+
+  .backgroundPhoto p {
+    @apply text-[14px];
+  }
+}
